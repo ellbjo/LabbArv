@@ -9,7 +9,7 @@ namespace LabbArv
         //Implements the property solely for giraffes
         public string pattern;
 
-        //Constructor for new giraffes
+        //Constructor for new giraffes with in arguments
         public Giraff(string species, string colour, string sound, int weight, int age, string pattern) : base(species, colour, sound, weight, age)
         {
             this.pattern = pattern;
@@ -32,7 +32,7 @@ namespace LabbArv
             Console.WriteLine("This animal has a long neck");
         }
 
-        public override void makeSound()
+        public override void MakeSound()
         {
             Console.WriteLine(sound);
         }

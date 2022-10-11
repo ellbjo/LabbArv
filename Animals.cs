@@ -13,7 +13,7 @@ namespace LabbArv
         public int weight;
         public int age;
 
-        //Creates a constructor for the baseclass animals
+        //Creates a constructor with in arguments
         public Animals(string species, string colour, string sound, int weight, int age)
         {
             this.species = species;
@@ -30,17 +30,17 @@ namespace LabbArv
         }
 
         //Creates three default methods that can be used later on, virtual since the method will be overridden in other classes
-        public virtual void makeSound()
+        public virtual void MakeSound()
         {
             Console.WriteLine("Hello I am an animal");
         }
 
-        public void getWeight()
+        public void GetWeight()
         {
             Console.WriteLine("This animal weighs " + weight + " kilos");
         }
 
-        public void getAge()
+        public void GetAge()
         {
             Console.WriteLine("This animal is " + age + " years old");
         }

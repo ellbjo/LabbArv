@@ -9,8 +9,8 @@ namespace LabbArv                                   //Ellinor Vonck .NET22
         {
             //Creates default animals and prints their properties and methods
             Samoyed Lily = new Samoyed();
-            Lily.makeSound();
-            Lily.samoyedFact();
+            Lily.MakeSound();
+            Lily.SamoyedFact();
             Console.WriteLine("Samoyeds are used for " + Lily.use);
             Lily.DirectBirth();
             Console.WriteLine("Samoyeds are " + Lily.characteristic);
@@ -19,7 +19,7 @@ namespace LabbArv                                   //Ellinor Vonck .NET22
             Console.WriteLine("");
 
             Giraff giraff1 = new Giraff();
-            giraff1.makeSound();
+            giraff1.MakeSound();
             Console.WriteLine("This giraffe is " + giraff1.pattern);
             giraff1.ObviousFact();
             giraff1.DirectBirth();
@@ -28,15 +28,15 @@ namespace LabbArv                                   //Ellinor Vonck .NET22
             Console.WriteLine("");
 
             Chihuahua chihuahua1 = new Chihuahua();
-            chihuahua1.makeSound();
+            chihuahua1.MakeSound();
             Console.WriteLine("Chihuahuas are from " + chihuahua1.origin);
-            chihuahua1.chihuahuaFact();
+            chihuahua1.ChihuahuaFact();
             chihuahua1.DirectBirth();
 
             Console.WriteLine("");
 
             Snake snake1 = new Snake();
-            snake1.makeSound();
+            snake1.MakeSound();
             Console.WriteLine("This animal is " + snake1.speed);
             Console.WriteLine("This snake is " + snake1.age + " years old");
             snake1.LaysEgg();

@@ -15,19 +15,20 @@ namespace LabbArv
             this.characteristic = "loyal";
         }
 
+        //Creates a constructor with in arguments
         public Samoyed(string species, string colour, string sound, int weight, int age, string characteristic, string use) : base(species, colour, sound, weight, age, characteristic)
         {
-            this.use = "Sledding";
+            this.use = use;
         }
 
         //Overridden required method
-        public override void makeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("RUFF-RUFF");
         }
 
         //Unique method
-        public void samoyedFact()
+        public void SamoyedFact()
         {
             Console.WriteLine("Samoyed likes to dig");
         }

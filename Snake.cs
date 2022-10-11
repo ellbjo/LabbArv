@@ -8,9 +8,11 @@ namespace LabbArv
     {
         //Implements the property solely for snakes
         public string speed;
+
+        //Creates a snake constructor with in arguments
         public Snake(string species, string colour, string sound, int weight, int age, string speed) : base(species, colour, sound, weight, age)
         {
-            this.speed = "Fast";
+            this.speed = speed;
         }
 
         //Constructs the default snake
@@ -32,7 +34,7 @@ namespace LabbArv
 
 
         //Overridden method that prints out costum sound
-        public override void makeSound()
+        public override void MakeSound()
         {
             Console.WriteLine(sound);
         }

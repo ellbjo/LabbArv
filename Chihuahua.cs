@@ -9,10 +9,10 @@ namespace LabbArv
         //Specific property for chihuahuas
         public string origin;
 
-        //Constructor for new chihuahuas
+        //Constructor for new chihuahuas with in arguments
         public Chihuahua(string species, string colour, string sound, int weight, int age, string characteristic, string origin) : base(species, colour, sound, weight, age, characteristic)
         {
-            this.origin = "Mexico";
+            this.origin = origin;
         }
 
         //Default chihuahua
@@ -28,13 +28,13 @@ namespace LabbArv
         }
 
         //Overridden method that prints out costum sound instead of the one in "Dog"-class
-        public override void makeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("Wiff-Wiff");
         }
 
         //Prints unique method
-        public void chihuahuaFact()
+        public void ChihuahuaFact()
         {
             Console.WriteLine("Chihuahuas can have manes");
         }

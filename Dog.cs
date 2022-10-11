@@ -10,10 +10,10 @@ namespace LabbArv
         //Unique property for the "Dog" class and the classes that inherites from it
         public string characteristic;
 
-        //Constructor
+        //Constructor with in arguments
         public Dog(string species, string colour, string sound, int weight, int age, string characteristic) : base(species, colour, sound, weight, age)
         {
-            this.characteristic = "Friendly";
+            this.characteristic = characteristic;
         }
 
         //Default dog
@@ -28,7 +28,7 @@ namespace LabbArv
         }
 
         //Unique method, also acceccible for classes inheriting from the "Dog" class
-        public virtual void Waggingtail()
+        public virtual void WaggingTail()
         {
             Console.WriteLine("The dog is wagging its tail");
         }
